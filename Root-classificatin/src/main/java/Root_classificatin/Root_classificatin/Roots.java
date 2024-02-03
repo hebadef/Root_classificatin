@@ -26,7 +26,7 @@ class Roots
    {
       double q, r;
       
-      q = b*b -(2*a*c);
+      q = (b*b -(2*a*c));
      
       if (out_of_Range(a, 0, 50)|| out_of_Range(b, 0, 50)||out_of_Range(c, 0, 100)) {
     	  roots = Root_Types.Two_roots;
@@ -36,7 +36,7 @@ class Roots
       if (a != 0) {
 	      if(q>0 )
 	      {
-		      roots = Root_Types.Equal_roots; 
+		      roots = Root_Types.Two_roots; 
 	      }
 	      else if(q==0)
 	      {
